@@ -14,7 +14,7 @@ button{
 
     margin-top: 15px;
     font-size: 2rem;
-    background-color: rgb(24, 0, 236);
+    background-color: rgba(25, 0, 248, 0.781);
     border: black 1px solid;
 
 }
@@ -25,6 +25,17 @@ form {
     background-color: rgba(194, 191, 191, 0.418);
     padding: 40px;
     border-radius: 25px;
+
+}
+
+
+div{
+
+    flex-direction: column;
+    background-color: rgba(0, 255, 42, 0.808);
+    border-radius: 10px;
+    margin-left: 5px;
+    padding: 10px;
 
 }
 
