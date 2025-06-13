@@ -1,43 +1,76 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-                <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title> Formulario 1 </title>
-                <link rel="stylesheet" href="./style.css">
-                <script src="/script.js" defer></script>
-        </head>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario 1 </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="/script.js" defer></script>
 
+</head>
 
-        <body>
-        
-                
-            <form>
+<body>
+    <header>
 
-                <h1> Por favor rellenar el Formulario </h1>
+        <button type="button" class="oscuro" onclick="tema()">Cambio de tema</button>
 
-                <label for="Mane"> Nombre </label>
-                <input id="Mane" type="text" name="Nombre">
+    </header>
+
+    <main>
+
+        <form>
+
+            <h1> Por favor rellenar el Formulario </h1>
+
+            <label for="Mane">
+                <h3>Nombre</h3>
+            </label>
+            <input id="Mane" type="text" name="Nombre">
+
+            <br>
+            <label for="surn">
+                <h3>Apellido</h3>
+            </label>
+            <input id="surn" type="text" name="Apellido">
+
+            <br>
+            <label for="tick">
+                <h3>Años</h3>
+            </label>
+            <input id="tick" type="number" name="Años">
+
+            <br>
+            <button type="button" class="boton" onclick="validar()">Enviar</button>
+
+        </form>
+
+            <div id="fondo1" class="modal1">
+
+                <h3>
+                    <span class="tituloRes">Nombre:</span>
+
+                    <span class="respuestas" id="respuestaNombre"></span>
+                    
+                </h3>
                 <br>
-                <label for="surn"> Apellido </label>
-                <input id="surn" type="text" name="Apellido">
+
+                <h3>
+                    <span class="tituloRes">Apellido:</span>
+                    <span class="respuestas" id="respuestaApellido"></span>
+                </h3>
                 <br>
-                <label for="tick"> Años </label>
-                <input id="tick" type="number" name="Años">
-                <br>
-                <button type="button" onclick="validar()">Enviar</button>
 
-            </form>
+                <h3>
+                    <span class="tituloRes">Años:</span>
+                    <span class="respuestas" id="respuestaAños"></span>
+                </h3>
 
-            <div class="modal">
-
-                <p id="respuestaNombre">Nombre: </p>
-                <p id="respuestaApellido">Apellido: </p>
-                <p id="respuestaAños">Años: </p>
 
             </div>
+    </main>
 
 
-        </body>
-    </html>
+</body>
+
+</html>
