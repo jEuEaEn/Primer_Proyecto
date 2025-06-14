@@ -113,19 +113,6 @@ color: black;
  }
 
 
- .claro{
-
-    flex-direction: row;
-    background-color: aqua;
-    color: black;
-    border-radius: 10px;
-    margin-right: 8px;
-    padding: 10px;
-    border: rgb(255, 255, 255) 2.6px solid;
-    font-size: 1rem;
-
- }
-
  .oscuro{
 
     flex-direction:row ;
